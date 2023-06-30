@@ -1,8 +1,9 @@
 
 
 
-function obtenerBromas() {
-  const resultados = fetch("https://api.chucknorris.io/jokes/random")
+async function obtenerBromas() {
+  const resultados = await fetch("https://api.chucknorris.io/jokes/random")
+  console.log(resultados)
 }
 
 const broma = {
@@ -32,6 +33,16 @@ const broma = {
     };
 
   }
+
+  // function gifConBroma(){
+  //   const gifChuck = {
+  //     url: "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif"
+  //     console.log(gifChuck);
+  //   }
+  // }
+
+  // gifConBroma()
+
 // Obtener referencias a los elementos del DOM
 const inputBroma = document.querySelector("input[type='text']");
 const btnBroma = document.getElementById('boton');
@@ -51,6 +62,4 @@ function obtenerBroma() {
       console.log('Error:', error);
     });
 }
-
-
 

@@ -1,6 +1,29 @@
-* {
-    background-color: darkolivegreen;
+body {
+        background-color: rgb(0, 0, 0);
 }
+
+header {
+    color: white;
+    text-align: center;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+    border: 1px white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black;
+}
+
 
 .container {
     display: flex;
@@ -11,18 +34,25 @@
 
 .container img {
 
-    width: 100%;
-}  
-
-
-h1 {
-    border: 0;
+    border: 10px;
     background-image: linear-gradient(
         150deg,
         #9500ff,
         #09f,
         #00DDFF
-    )
+    );
+    border-radius: 8px;
+    color: white;
+    padding: 4px;
+}  
+
+
+h1 {
+    
+    font-family: 'Texas Ranger 3D', sans-serif;
+    color: white;
+    font-size: auto;
+      
 }
 
 button  {
@@ -57,3 +87,121 @@ button:hover span {
 button:active {
     transform: scale(0.9);
 }
+
+#broma {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 40px;
+    font-family: monospace; 
+    background-image: linear-gradient(
+    150deg,
+    #9500ff,
+    #09f,
+    #00DDFF);
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+
+#botonesContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  font-size: 30px;
+  font-family: monospace;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000000;
+  gap: 15px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.boton-receta {
+    background-color: rgb(0, 0, 0);
+    height: auto;
+    width: auto;
+    border: 0;
+    background-image: linear-gradient(
+      150deg,
+      #9500ff,
+      #09f,
+      #00DDFF
+    );
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px black;
+    padding: 10px;
+    margin: 10px;
+    font: monospace;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+
+.boton-receta span {
+    background-color: #111;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .3s;
+
+ }
+
+.boton-receta:hover span {
+    background: none;
+}
+
+.boton-receta:active {
+    transform: scale(0.9);
+}
+
+
+
+.recetas-container {
+  
+    position: relative;
+    margin: auto;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    height: 50vw;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 40px;
+    font-family: monospace; 
+    background-image: linear-gradient(
+    150deg,
+    #9500ff,
+    #09f,
+    #00DDFF);
+  }
