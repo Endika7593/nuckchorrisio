@@ -2,81 +2,83 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
+.headerRecetas {
+color: white;
+text-align: center;
+background-image: url("images/britishflag.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+height: 200px;
+font-size: 50px;
+text-shadow: 10px 10px 10px black;
+}
+
 header {
-color: white;
-text-align: center;
-}
+  color: white;
+  text-align: center;
+  background-image: url("images/2gemcej.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  font-size: 50px;
+  text-shadow: 10px 10px 10px black;
+  }
 
 
-.menu {
-margin: 27px auto 0;
-position: relative;
-width: 590px;
-height: 50px;
-background-color: #34495e;
-border-radius: 8px;
-font-size: 0;
-}
+  #navegador {
+    position: absolute;
+    padding-top: 19px;
+    width: 100%; /* Ajusta el ancho al 100% para ocupar todo el ancho del contenedor */
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    margin-bottom: 30px;
+  }
+  
+  a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    letter-spacing: .5px;
+    padding: 0 20px;
+    cursor: pointer;
+  }
+  
+  a:before,
+  a:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background: orangered;
+    transition: .5s;
+  }
+  
+  a:after {
+    left: 0;
+    bottom: -10px;
+  }
+  
+  a:before {
+    right: 0;
+    top: -10px;
+  }
+  
+  a:hover:after,
+  a:hover:before {
+    width: 100%;
+  }
+  
 
-.menu a {
-line-height: 50px;
-height: 100%;
-font-size: 15px;
-display: inline-block;
-position: relative;
-z-index: 1;
-text-decoration: none;
-text-transform: uppercase;
-text-align: center;
-color: white;
-cursor: pointer;
-}
 
-menu .animation {
-position: absolute;
-height: 100%;
-top: 0;
-z-index: 0;
-transition: all, .5s ease 0s;
-border-radius:8px
-}
-
-a:nth-child(1) {
-width: 100px;
-}
-
-a:nth-child(2) {
-width: 110px;
-}
-
-a:nth-child(3) {
-width: 100px;
-}
-
-a:nth-child(4) {
-width: 160px;
-}
-
-a:nth-child(5) {
-width: 120px;
-}
-
-menu .start-home, a:nth-child(1):hover~.animation {
-width: 100px;
-left: 0;
-background-color: #1abc9c;
-}
-
-menu .start-home, a:nth-child(2):hover~.animation {
-width: 110px;
-left: 100px;
-background-color: #e74c3c;
-}
 .container {
+  margin-top: 70px;;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+font-size: 40px;
 }
 
 .container img {
@@ -531,3 +533,15 @@ margin: 20px;
     margin: 20px;
   }
   
+
+  @media screen and (max-width: 767px) {
+
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+
+  }
+
+  @media screen and (min-width: 992px) {
+    
+  }
